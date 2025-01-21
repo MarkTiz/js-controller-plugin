@@ -2,12 +2,13 @@
   "manifest_version": 3,
   "name": "JS 控制器",
   "version": "1.0",
-  "description": "控制网页JavaScript的开关",
+  "description": "一键关闭JavaScript",
   "permissions": [
     "activeTab",
     "scripting",
     "storage",
-    "tabs"
+    "tabs",
+    "notifications"
   ],
   "host_permissions": [
     "<all_urls>"
@@ -16,7 +17,6 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup.html",
     "default_icon": {
       "16": "images/js16.png",
       "32": "images/js32.png",
